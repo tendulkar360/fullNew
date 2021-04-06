@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,::before,::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    display: grid;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+.carousel {
+    width: 98%;
+    margin: auto;
+    height: 100vh;
+}
+
+#services-page , #about-page , #order-page {
+    padding-top: 60px;
+    height: 100vh;
+}
+
+#services-page h1 , #about-page h1 , #order-page h1 {
+    text-align: center;
+}
+
+#services-page p , #about-page p {
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+#order-page {
+    padding-bottom: 20px;
+    height: 120vh;
+}
+
+#order-page .first-container {
+    padding-top: 70px;
+    margin-left: 0;
+}
+
+#order-page .second-container {
+    margin-top: 100px;
+}
+
+#order-page h3 {
+    text-align: center;
+    padding-top: 100px;
+    text-decoration: underline;
+}
+
+.card-container {
+    margin-top: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30vh;
+    height: 50vh;
+    background: white;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0px black;
+    margin-left: 10%;
+}
+
+#order-page button {
+    background-color: green;
+    position: absolute;
+    left: 13%;
+    top: 80%;
+    font-size: 1.5em;
+    padding: 2px 30px;
+    border-radius: 8px;
+    outline: none;
+    /* font-weight: 700; */
+}
+
+#order-page button:hover {
+    font-size: 1.52em;
+    box-shadow: 0 0 15px 0 black;
+}
+
+.card img {
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 4px;
+}
+
+.card h4 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card p {
+    position: absolute;
+    top: 62%;
+    left: 30%;
+    font-size: 1.8rem;
+    color: red;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+#contact-page {
+    background-color: rgb(41, 38, 38);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    height: 81vh;
+}
+
+.contact-container {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 30px;
+}
+
+input[type="text"] , textarea {
+    padding: 3px 0 3px 8px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.btn {
+    color: green;
+    background: none;
+    border: 2px solid;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.btn:hover {
+    background: #fff;
+}
+
+.btn:active {
+    background-color: rgb(67, 67, 253);
+}
+
+#contact-page h5 {
+    text-align: left;
+}
+
+footer {
+    background-color: black;
+    color: grey;
+    line-height: 40px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    color: purple;
+    transition: 0.5s linear;
+
+}
+
+.social-icons img {
+    width: 60px;
+    margin-top: 20px;
+}
+
+.social-icons .instagram {
+    width: 40px;
+}
+
+.social-icons {
+    margin-left: 500px;
+    margin-top: 90px;
+}
+
+@media only screen and (max-width: 1330px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel img {
+        height: 79vh;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    h5 {
+        margin-top: 5px;
+    }
+
+    .form {
+        width: 82%;
+        margin-top: 20px;
+    }
+
+    #contact-page {
+        height: 100%;
+        background-color: rgb(41, 38, 38);
+        padding-top: 50px;
+    }
+
+    footer {
+        margin-bottom: 0;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    #services-page , #about-page , #order-page {
+        /* padding-top: 60px; */
+        height: 200vh;
+    }
+    
+    #services-page , #about-page , #order-page , #contact-page {
+        overflow: hidden;
+    }
+
+    #order-page {
+        padding-bottom: 20px;
+    }
+
+    .social-icons {
+        margin: auto;
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .card {
+        width: 20vh;
+        height: 33vh;
+        background: white;
+        border: 1px solid;
+        border-radius: 10px;
+        box-shadow: 0 0 15px 0px black;
+        margin-left: 10%;
+    }
+    
+
+    .card img {
+        width: 90%;
+        height: 40%;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        border-radius: 4px;
+    }
+
+    #order-page button {
+        background-color: green;
+        position: absolute;
+        left: 13%;
+        top: 80%;
+        font-weight: bold;
+        font-size: 0.3em;
+        /* padding: 2px 30px; */
+        border-radius: 8px;
+        outline: none;
+    }
+
+    .card h4 {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .card p {
+        position: absolute;
+        top: 62%;
+        left: 30%;
+        font-size: 1.8rem;
+        color: red;
+    }
+}
